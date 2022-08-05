@@ -1,0 +1,49 @@
+<mat-drawer-container class="example-container" [hasBackdrop]="false">
+    <mat-drawer #drawer mode="side">
+
+        <mat-card style="height: 726px;
+  width: 250px;box-shadow: 0 2px 1px -1px #0003, 0 1px 1px #00000024, 0 1px 20px #0000001f">
+            <mat-list>
+                <mat-list-item>
+                    <!-- <div mat-subheader>Folders</div> -->
+                    <mat-icon mat-list-icon>
+                        <img src="\assets\icons8-home-32.png" style="height: 50px;
+      width: 50px;margin-top: -20px;margin-left: -20px;">
+                    </mat-icon>
+                    <div mat-line>Home</div>
+                </mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item style="padding-top: 20px;">
+                    <mat-icon mat-list-icon>
+                        <img src="\assets\icons8-dashboard-64.png" style="height: 30px;
+        width: 30px;margin-top: -4px;">
+                    </mat-icon>
+                    <div mat-line>Dashboard</div>
+                </mat-list-item>
+                <mat-list-item style="padding-top: 20px;">
+                    <mat-icon mat-list-icon>
+                        <img src="\assets\user.png" style="height: 30px;
+        width: 30px;margin-top: -4px;">
+                    </mat-icon>
+                    <div mat-line>User Profile</div>
+                </mat-list-item>
+                <mat-list-item style="padding-top: 20px;">
+                    <mat-icon mat-list-icon>
+                        <img src="\assets\icons8-notification.gif" style="height: 30px;
+        width: 30px;margin-top: -4px;">
+                    </mat-icon>
+                    <div mat-line>Notifications</div>
+                </mat-list-item>
+                <mat-list-item style="padding-top: 20px;">
+                    <mat-icon mat-list-icon>
+                        <img src="\assets\icons8-settings.gif" style="height: 30px;
+        width: 30px;margin-top: -4px;">
+                    </mat-icon>
+                    <div mat-line>Settings</div>
+                </mat-list-item>
+            </mat-list>
+
+        </mat-card>
+    </mat-drawer>
+    <button style="height: 727px;width: 1%;" (click)="drawer.toggle()"></button>
+</mat-drawer-container>
